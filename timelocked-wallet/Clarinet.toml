@@ -5,6 +5,10 @@ description = ""
 telemetry = false
 requirements = []
 cache_dir = "/Users/sionkim/.clarinet/cache"
+[contracts.smart-claimant]
+path = "contracts/smart-claimant.clar"
+depends_on = ["timelocked-wallet"]
+
 [contracts.timelocked-wallet]
 path = "contracts/timelocked-wallet.clar"
 depends_on = []
