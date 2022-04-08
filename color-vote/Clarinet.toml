@@ -1,0 +1,23 @@
+[project]
+name = "color-vote"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+cache_dir = "/Users/sionkim/.clarinet/cache"
+[contracts.color-vote]
+path = "contracts/color-vote.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
